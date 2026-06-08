@@ -7,8 +7,6 @@
 
 A multi-threaded C++ computational engine designed to solve the Tolman-Oppenheimer-Volkoff (TOV) system of differential equations. This solver computes the macroscopic properties (Mass and Radius) of static, spherically symmetric compact objects (neutron stars) across broad central pressure sweeps using customizable Equations of State (EoS).
 
-The project includes an integrated Python visualization framework to map the stellar stability landscape and verify compliance with the Turning Point Theorem ($dM/dP_c = 0$).
-
 ---
 
 ## Prerequisites
@@ -18,13 +16,9 @@ To build the solver from source, your system requires:
 * **CMake** (v3.15 or higher)
 * **Boost C++ Libraries** (Specifically `Boost.Numeric.Odeint`)
 * **OpenMP**
-* **Python & Matplotlib** 
+* **Python & Related Library** 
 
 ---
-
-## Developer's Note
-
-Initially, I attempted to build a TOV solver from scratch to independently model the Equation of State constraints outlined in the 2020 Annala et al. paper. During this process, I discovered the public multi-polytrope repositories developed by Eemeli Annala and Joonas Nättilä. Recognizing the elegance of their approach, I have decided to base my logical layout on their structure, but implement the pipeline entirely in my own way utilizing C++, adaptive `Boost::odeint` integrators, and OpenMP architecture.
 
 **Currently the project is under active development to implement the file structure, dense QCD and thermodynamic boundaries**
 
