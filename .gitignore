@@ -1,0 +1,9 @@
+#  Build Directories 
+build/
+
+#  Python Caches 
+__pycache__/
+*.pyc
+
+#  OS Generated Files 
+.DS_Store
