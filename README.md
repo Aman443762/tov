@@ -31,7 +31,9 @@ To build the solver from source, your system requires:
 1. Clone the repository:
 ```bash
    git clone https://github.com/Aman443762/tov_solver.git
-   cd tov_solver/build
+   cd tov_solver
+   mkdir build
+   cd build
    cmake ..
    make 
    cd ..
